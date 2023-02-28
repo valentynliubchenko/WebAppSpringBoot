@@ -2,4 +2,4 @@ server:
   port: 9099
 
 my:
-  hello: Hello
+  hello: Hello my friend
