@@ -27,5 +27,8 @@ public class Person {
 	public static void setI(int i) {
 		Person.i = i;
 	}
+	public static void setI2(int i) {
+		Person.i = i;
+	}
 
 }
