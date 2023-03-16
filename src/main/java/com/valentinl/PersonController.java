@@ -12,6 +12,8 @@ public class PersonController {
 	private String hello;
 
 	@Autowired
+	Person myPerson;
+	@Autowired
 	@Qualifier("personService")
 	private PersonInterface personInterface;
 	@RequestMapping(method = RequestMethod.GET, value = "/createPerson")
@@ -21,6 +23,7 @@ public class PersonController {
 
 	@RequestMapping(method = RequestMethod.GET, value = "/info")
 	public String getInfo(@RequestParam(required = false) String name){
+		System.out.println("valenitnl " +myPerson.getName());
 		return hello + " " + name;
 	}
 
